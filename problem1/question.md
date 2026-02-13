@@ -1,4 +1,4 @@
-# Project Euler Problem 1: Multiples of 3 or 5 🎯
+# Problem 1: Multiples of 3 or 5 🎯
 
 ## The Challenge
 
