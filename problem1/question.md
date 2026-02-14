@@ -50,15 +50,13 @@ Before you start coding, think about HOW you'll solve this problem. An algorithm
    - How will you step through them?
 
 ### Write Your Algorithm Here:
-
+**Solution 1:**
 ```
-Step 1: 
+Step 1: Check every number from 0 to 1000
 
-Step 2: 
+Step 2: If that number is divisible by 3 or 5, add it to the total value
 
-Step 3: 
-
-(Add more steps as needed!)
+Step 3: Print the total value after checking all numbers
 ```
 
 ### Example Algorithm (for numbers below 10):
