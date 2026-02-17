@@ -58,15 +58,18 @@ Step 2: If that number is divisible by 3 or 5, add it to the total value
 
 Step 3: Print the total value after checking all numbers
 ```
-
-### Example Algorithm (for numbers below 10):
+**Solution 2:**
 ```
-Step 1: Start with a sum of 0
-Step 2: Check each number from 1 to 9
-Step 3: If the number is divisible by 3 OR divisible by 5, add it to the sum
-Step 4: Return the final sum
-```
+Step 1: Find multiples of 3 that are less than 1000
 
+Step 2: Add the multiples to the total
+
+Step 3: Find multiples of 5 that are less than 1000
+
+Step 4: Add the multiples to the total IF they are not divisible by 3
+
+Step 5: Print the total value
+```
 ---
 
 ## Hints and Tips 💭
@@ -92,9 +95,9 @@ Before running your program on 1000, test it with smaller numbers:
 
 | Range | Expected Sum | Your Result |
 |-------|--------------|-------------|
-| Below 10 | 23 | ? |
-| Below 20 | 78 | ? |
-| Below 100 | 2318 | ? |
+| Below 10 | 23 | 23 |
+| Below 20 | 78 | 78 |
+| Below 100 | 2318 | 2318 |
 
 If these work, try 1000!
 
@@ -121,10 +124,15 @@ PRINT sum
 After you solve the problem, think about:
 
 1. **How long does your program take to run?**
+Solution 1 : 7 milliseconds
+Solution 2 : 0.1 millisecond
 2. **Could you make it faster?**
+Yes, and I did from solution 1 to solution 2
 3. **What would change if we asked for multiples of 3 or 7 instead?**
+Solution 1 : change the multiples that the for loop is looking for, change 1 number
+Solution 2 : change the parameters entered when calling the function, change 1 number
 4. **Can you solve it with math instead of programming?**
-
+No, because it would take too long because of how many calcutalions need to be done
 ---
 
 ## Good Luck! 🚀
