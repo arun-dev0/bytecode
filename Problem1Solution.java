@@ -12,5 +12,13 @@ public class Problem1Solution {
     } 
 }
 
+/*
+Algorithm
 
+Step 1: Start out with 0
+Step 2: Count up to 1000
+Step 3: Check each number if it is a multiple of 3 and or 5
+Step 4: If the number is a multiple, add it to "number" (Variable)
+Step 5: Print the final number
+ */
 
