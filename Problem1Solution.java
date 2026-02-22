@@ -1,5 +1,42 @@
+
+
 public class Problem1Solution {
     public static void main(String[] args){
+        int FinalSum = 0;
+
+       for(int tsn = 3; tsn < 1000; tsn += 3) { //tsn means three starter number
+            FinalSum += tsn;
+        }
+
+        for (int fsn = 5; fsn < 1000; fsn += 5) { //fsn means five starter number
+            FinalSum += fsn;
+        }
+
+        for (int fifteensn = 15; fifteensn < 1000; fifteensn += 15) {
+            FinalSum -= fifteensn;
+        }
+
+        System.out.println("Sum:" + FinalSum);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    public static void main(String[] args){
 
         int number = 0; // numbers to go through
 
@@ -10,7 +47,11 @@ public class Problem1Solution {
         }
         System.out.println("Sum:" + number);
     } 
-}
+*/
+
+
+
+
 
 /*
 Algorithm
