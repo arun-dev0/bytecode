@@ -132,7 +132,7 @@ Yes, and I did from solution 1 to solution 2
 Solution 1 : change the multiples that the for loop is looking for, change 1 number
 Solution 2 : change the parameters entered when calling the function, change 1 number
 4. **Can you solve it with math instead of programming?**
-No, because it would take too long because of how many calcutalions need to be done
+No, because it would take too long because of how many calculations need to be done
 ---
 
 ## Good Luck! 🚀

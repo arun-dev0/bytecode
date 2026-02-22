@@ -35,7 +35,7 @@ public class problem1solution {
         long stop = System.nanoTime();
         long durationNano = stop - start;
         double durationMilli = (double) durationNano / 1_000_000.0;
-        System.out.println("Execution time: " + durationMilli); // finde execution time
+        System.out.println("Execution time: " + durationMilli); // find execution time
     }
 }
 // Answer: 233168
