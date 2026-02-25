@@ -1,11 +1,11 @@
 package problem2;
 public class problem2solution {
     public static void main(String[] args) {
-        solution1();
-        solution2();
-        solution3();
+        solution1();//solution 1, just to get the idea of how to find the solution ( basic solution )
+        solution2();//solution 2, only adds every 3rd fibonacci number, but finds all of them, omptimiezed a little bit ( intermediate solution )
+        solution3();//solution 3, only stores the values of the even numbers, doesn't even find the odd ones, ompimized all the way ( advanced soltuion )
     }
-    private static void solution1(){//solution 1, just to get the idea of how to find the solution
+    private static void solution1(){
         long start = System.nanoTime();
         long sum = 0;// sum variable
         long previous = 1;//first number used for calculations
@@ -26,7 +26,7 @@ public class problem2solution {
         double durationMilli = (double) durationNano / 1_000_000.0;
         System.out.println("Execution time: " + durationMilli);//finds execution time
     }
-    private static void solution2(){//solution 2, only adds every 3rd fibonacci number, but finds all of them
+    private static void solution2(){
         long start = System.nanoTime();
         long sum = 0;//sum variable
         long previous = 1;//first number for calculations
@@ -47,7 +47,7 @@ public class problem2solution {
         double durationMilli = (double) durationNano / 1_000_000.0;
         System.out.println("Execution time: " + durationMilli);//find execution time
     }
-    private static void solution3(){//solution 3, only stores the values of the even numbers, doesn't even find the odd ones
+    private static void solution3(){
         long start = System.nanoTime();
         long sum = 0;//sum variable
         long previous = 1;//first number for calculations

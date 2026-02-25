@@ -230,7 +230,7 @@ The first solution is very fast, but the second solution is faster
 3. **Could you explain the Fibonacci sequence to a friend?**
 Yes. The sequence starts with 1 and 2 as the first 2 numbers, and each number after that is the sum ot the 2 numbers before it. For example, the 3rd number is 3 because the numbers before it are 1 and 2, and 1+2=3. The fourth number is 5, becasue the two numbers before it are 2 and 3, and 2+3=5. 
 4. **What real-world applications can you think of for this sequence?**
-I can not think of any
+It is used in art and architectureas well as computer science, as per Google.
 
 ---
 
