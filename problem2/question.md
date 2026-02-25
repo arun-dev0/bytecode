@@ -126,10 +126,10 @@ Start with smaller limits to make sure your code works:
 
 | Limit | Even Fibonacci Numbers | Expected Sum | Your Result |
 |-------|------------------------|--------------|-------------|
-| Below 10 | 2, 8 | 10 | ? |
-| Below 100 | 2, 8, 34 | 44 | ? |
-| Below 1,000 | 2, 8, 34, 144, 610 | 798 | ? |
-| Below 4,000,000 | (many!) | ??? | ? |
+| Below 10 | 2, 8 | 10 | 10 |
+| Below 100 | 2, 8, 34 | 44 | 44 |
+| Below 1,000 | 2, 8, 34, 144, 610 | 798 | 798 |
+| Below 4,000,000 | (many!) | ??? | 4613732 |
 
 ---
 
@@ -186,14 +186,19 @@ PRINT sum
 After you solve it, think about these:
 
 1. **How many even Fibonacci numbers are there below 4 million?**
+11 even fibonacci numbers are less than 4,000,000
 
 2. **What's the largest even Fibonacci number below 4 million?**
+3524578
 
 3. **Can you solve it without checking if each number is even?** (Hint: use the pattern!)
+Yes
 
 4. **What if we wanted the sum of ODD Fibonacci numbers instead?**
+Change ```addend % 2 == 0``` to ```addend % 2 != 0 ```
 
 5. **Can you write a formula to calculate the nth Fibonacci number without loops?** (Look up "Binet's Formula"!)
+I do not know how to do it yet.
 
 ---
 
@@ -219,9 +224,13 @@ Try all three approaches and compare their speed!
 ## Reflection Questions 🤔
 
 1. **Did you find the pattern with even numbers?**
+Every third number, except for 2. 2 is the second number
 2. **How efficient is your solution?**
+The first solution is very fast, but the second solution is faster
 3. **Could you explain the Fibonacci sequence to a friend?**
+Yes. The sequence starts with 1 and 2 as the first 2 numbers, and each number after that is the sum ot the 2 numbers before it. For example, the 3rd number is 3 because the numbers before it are 1 and 2, and 1+2=3. The fourth number is 5, becasue the two numbers before it are 2 and 3, and 2+3=5. 
 4. **What real-world applications can you think of for this sequence?**
+I can not think of any
 
 ---
 
