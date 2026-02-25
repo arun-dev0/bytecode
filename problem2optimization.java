@@ -34,6 +34,6 @@ public class problem2optimization {
 
         //PRINT SUM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!:DDDDDD:))))
         System.out.println("Sum of even Fibonacci numbers up to 4,000,000: " + sum);
-        //CHICKEN BIRYANI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        
     }
 }
