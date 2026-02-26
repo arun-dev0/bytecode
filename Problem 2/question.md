@@ -74,13 +74,16 @@ Do you see a pattern with the even numbers? 🤔
 
 ```
 Step 1: 
-
+My first step was to start with 1 and 2, but when I made it faster i started with the 2 first even numbers: 2 and 8
 Step 2: 
-
+I will use the thing % and put 2 to check if it is even
 Step 3: 
-
+i only need to store the even numbers when doing the sequence
 Step 4:
-
+next even = 4 × current even + previous even - --- i use this to calculate next number
+Step 5:
+continue the sequence.
+Step 6: print the sum
 (Add more steps as needed!)
 ```
 
@@ -186,14 +189,17 @@ PRINT sum
 After you solve it, think about these:
 
 1. **How many even Fibonacci numbers are there below 4 million?**
-
+4,613,732
 2. **What's the largest even Fibonacci number below 4 million?**
 
 3. **Can you solve it without checking if each number is even?** (Hint: use the pattern!)
-
+Yes because you can use the calculation i gave above in my algorithim.
 4. **What if we wanted the sum of ODD Fibonacci numbers instead?**
-
+Then just skip every even by doing the first 2 intstead of every three.
 5. **Can you write a formula to calculate the nth Fibonacci number without loops?** (Look up "Binet's Formula"!)
+
+ 
+​
 
 ---
 

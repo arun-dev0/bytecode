@@ -32,7 +32,7 @@ public class problem2optimization {
             even2 = nextEven;
         }
 
-        //PRINT SUM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!:DDDDDD:))))
+        //PRINT SUM 
         System.out.println("Sum of even Fibonacci numbers up to 4,000,000: " + sum);
         
     }
