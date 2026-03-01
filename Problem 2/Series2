@@ -1,0 +1,19 @@
+public class Series {
+    public static void main (String[]args) {
+        long number1=1 //start number1 value at one
+        long number2=2;//start number2 value at two
+        long sum=0;//start the sum to be at 0
+
+        for(long number3=1;number3<4000000;){ /* Make a for loop to start at number3
+            and go all the way till it is less than 4 million*/
+
+            number3=number1+number2;//number 3 should equal num1+num2 (in other words the preivious numbers)
+            number1=number2;//after the addition move number2 to the number1 spot
+            number2=number3;//also move number3 to the number 2 spot
+            if(number3%2==0){//check if the added numbers(number3)is even
+                sum=sum+number3;//if its even it will be added to the sum
+            }
+        }
+        System.out.println("Sum equals"+sum); //print the sum of all the even numbers
+    }
+}
