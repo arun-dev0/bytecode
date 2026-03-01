@@ -1,0 +1,21 @@
+
+ public class Code2OPTIMIZED {
+    public static void main (String[]args) {
+        /* I made this a more optimized version of the the code, it only calculates the even numbers */
+        long Even1=2;   // Initialize even number one with the first even number in the sequence
+        long Even2=8; 
+        //long Even3=0; //Initialize even number 3 with 0 due to calculating that later
+        long sum=10;    // start at 10 because you need to keep the 2 and 8 above in mind 
+
+        for(long Even3=0;Even3<4000000;){  // create a while loop that goes till Even3 is less than 4 Million
+            Even3=4*Even2+Even1;// use this pattern which gets only the next EVEN number in the sequence
+            if (Even3 < 4000000) { // only add to the sum if Even3 is less than 4mil
+                sum=sum+Even3;// add it to the sum
+            }
+            Even1=Even2;// shift the number 2 to number 1
+            Even2=Even3;//shift number 3 to number 2
+            //System.out.println("Even1. " + Even1 + "  even2. " + Even2 + "  even3. " + Even3 );
+        }
+        System.out.println("Sum equals "+sum); //print the sum of all the even numbers
+    }
+}
