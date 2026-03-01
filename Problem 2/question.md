@@ -40,7 +40,7 @@ Start with 1 and 2, then each new number is the sum of the previous two numbers.
 - 89 (odd)
 
 Do you see a pattern with the even numbers? 🤔
-
+There is 2 odds, 1 even, 2 odds, 1 even, with the exception of the beginning
 ---
 
 ## Your Task 📝
@@ -58,29 +58,36 @@ Do you see a pattern with the even numbers? 🤔
 
 1. **How will you generate the Fibonacci sequence?**
    - What are your starting numbers?
+   1,2,3,5,8,13,21, etc
    - How do you calculate the next number?
+   add the previous number plus the next number
    - When do you stop?
-
+   before it reaches 4 million
 2. **How will you check if a number is even?**
    - Hint: Think about the modulo operator (%)
-
+    see if when divisble by 2 the remainder is 0
 3. **How will you keep track of the sum?**
    - Do you need to store all the numbers, or just some?
-
+    some, just the even ones
 4. **Can you find a pattern to make it faster?**
    - Look at the even numbers: 2, 8, 34... is there a pattern?
+   no
 
 ### Write Your Algorithm Here:
 
 ```
 Step 1: 
-
+Set parameter to all the fibonaccia variables are less than 4M
+make 2 variables, num1 and num 2
+assign num1 value to 1 and num2 value to 2
 Step 2: 
-
+make sure num1 and num2 are divisible by 2
 Step 3: 
-
+if it is divisible by to, add it to the new variable sum, if not discard
 Step 4:
-
+make num1 = num2 and num2=num1+num2
+Step 5:
+repeat until limit is hit and print out sum
 (Add more steps as needed!)
 ```
 
@@ -108,7 +115,7 @@ Step 4: Return the sum
 - Notice that the even numbers appear in a pattern!
 - Look: 2, 8, 34, 144, 610...
 - Can you find the relationship? (Check: what's 2×4 + 0? What's 8×4 + 2?)
-
+the number*4+previous even number = next even number
 ### Pattern Discovery Challenge:
 Did you notice that every **3rd** Fibonacci number is even? Why is this?
 - Odd + Odd = Even ✓
@@ -117,7 +124,7 @@ Did you notice that every **3rd** Fibonacci number is even? Why is this?
 - Then it repeats!
 
 If every 3rd number is even, could you skip calculating the odd ones entirely?
-
+not repeat everytime, just skip ahead two numbers
 ---
 
 ## Testing Your Code 🧪
@@ -186,13 +193,13 @@ PRINT sum
 After you solve it, think about these:
 
 1. **How many even Fibonacci numbers are there below 4 million?**
-
+11
 2. **What's the largest even Fibonacci number below 4 million?**
-
+3524578
 3. **Can you solve it without checking if each number is even?** (Hint: use the pattern!)
-
+Yes, just x*4+previous number
 4. **What if we wanted the sum of ODD Fibonacci numbers instead?**
-
+%2=1
 5. **Can you write a formula to calculate the nth Fibonacci number without loops?** (Look up "Binet's Formula"!)
 
 ---
@@ -219,10 +226,13 @@ Try all three approaches and compare their speed!
 ## Reflection Questions 🤔
 
 1. **Did you find the pattern with even numbers?**
+yes x*4+previous term
 2. **How efficient is your solution?**
+not that efficient
 3. **Could you explain the Fibonacci sequence to a friend?**
+yes
 4. **What real-world applications can you think of for this sequence?**
-
+Compound interest, but the interest doesn't use 100% of the previous term
 ---
 
 ## Good Luck! 🌟
