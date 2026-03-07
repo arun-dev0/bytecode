@@ -73,15 +73,15 @@ You DON'T need to check every single number from 1 upward. There's a much smarte
 ### Write Your Algorithm Here:
 
 ```
-Step 1: 
+Step 1: sets the lcm to 1
 
-Step 2: 
+Step 2: sets the factor being checked to 2
 
-Step 3: 
+Step 3: finds the next lcm by finding the lcm of the current lcm and the factor
 
-Step 4:
+Step 4: increase the factor by 1
 
-(Add more steps as needed!)
+Step 5: repeat steps 3 and 4 until the factor is 20 
 ```
 
 ---
@@ -96,6 +96,7 @@ Think about what numbers you actually need to test:
 - If divisible by 14, automatically divisible by 7, 2
 
 **Challenge:** Can you figure out the minimal set of numbers to check?
+11-20 is all we need to check, because the numbers from 1-10 are all factors of at least one number from 11-20
 
 ### Intermediate Approach: Use LCM
 The LCM (Least Common Multiple) of multiple numbers can be calculated step by step:
@@ -129,11 +130,11 @@ Test with smaller ranges first:
 
 | Range | Smallest Multiple | Your Result |
 |-------|-------------------|-------------|
-| 1 to 5 | 60 | ? |
-| 1 to 7 | 420 | ? |
-| 1 to 10 | 2520 | ? |
-| 1 to 13 | 360360 | ? |
-| 1 to 20 | ??? | ? |
+| 1 to 5 | 60 | 60 |
+| 1 to 7 | 420 | 420 |
+| 1 to 10 | 2520 | 2520 |
+| 1 to 13 | 360360 | 360360 |
+| 1 to 20 | ??? | 232792560 |
 
 ---
 
@@ -246,10 +247,13 @@ Let's see how different approaches perform:
 After you solve it, try these:
 
 1. **What's the answer for numbers 1 to 30?**
+5.493670133567616E19
 
 2. **How many digits does the answer for 1-20 have?**
+9
 
 3. **Can you solve it by hand using prime factorization?** (Try it!)
+I can
 
 4. **What patterns do you notice in the answers?**
    - 1-5 = 60
@@ -257,6 +261,7 @@ After you solve it, try these:
    - 1-20 = ???
 
 5. **Efficiency Challenge:** Make your program solve for 1-100 instantly!
+It does, but it gets the wrong answer
 
 ---
 
@@ -283,14 +288,19 @@ After you solve it, try these:
 ## Reflection Questions 🤔
 
 1. **Why is brute force so slow for this problem?**
+It checks every number from 21-232792560 for divisibility by numbers 1-20, and that is way too many calculations to do.
 
 2. **How does understanding prime factorization help?**
+It can really help optimizing the code.
 
 3. **What's the relationship between GCD and LCM?**
+lcm(a, b) = (a*b) / gcd(a, b)
 
 4. **Could you explain LCM to someone who's never heard of it?**
+Yes. It is not that complicated
 
 5. **Which approach did you use? Why?**
+I used the LCM method because it is the fasted timed that I knew how to do
 
 ---
 

@@ -15,7 +15,7 @@ public class problem2solution {
         while ( previous+current < 4000000 ){//making sure that the largest fibonacci number does not exceed 4,000,000
             next = previous + current;//adding 2 previous number to get current number
             if (next % 2 == 0){//check every number to see if it is even
-                sum += next;//addse the number if it is even
+                sum += next;//adds the number if it is even
             }
             previous=current;//sets up for next time through the loop
             current=next;
