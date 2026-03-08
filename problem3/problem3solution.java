@@ -61,15 +61,15 @@ public class problem3solution {
                 primeNumbers.add(i); // store all prime numbers
             }
         }
-        long finalValue = 1;
-        for (int primeNumber : primeNumbers) {
-            int exponent = 1;
-            while (Math.pow(primeNumber, exponent) <= 20){
-                exponent++;
+        long finalValue = 1; // final value declaration
+        for (int primeNumber : primeNumbers) { // loop to check every prime number for highest exponent less than 20
+            int exponent = 1; // exponent value to check
+            while (Math.pow(primeNumber, exponent) <= 20){ // sees if the prime number raised to the exponent is less than 20
+                exponent++; // if true, increases exponent
             } 
-            finalValue *= Math.pow(primeNumber, exponent-1);
+            finalValue *= Math.pow(primeNumber, exponent-1); // goes until greater, then adds the last value 
         }
-        System.out.println(finalValue);
+        System.out.println(finalValue); // prints final value
         long stop = System.nanoTime();
         double executionNanos = stop - start;
         double executionMillis = executionNanos / 1_000_000;

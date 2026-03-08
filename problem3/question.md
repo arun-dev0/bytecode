@@ -261,7 +261,7 @@ I can
    - 1-20 = 232792560
 
 5. **Efficiency Challenge:** Make your program solve for 1-100 instantly!
-It does, but it gets the wrong answer
+It does, but the answer is too large for a long variable to hold
 
 ---
 
@@ -300,8 +300,7 @@ lcm(a, b) = (a*b) / gcd(a, b)
 Yes. It is not that complicated
 
 5. **Which approach did you use? Why?**
-I used the LCM method because it is the fasted timed that I knew how to do
-
+I used the prime factorization method because it is the fastest
 ---
 
 ## Optimization Goals 🏆
