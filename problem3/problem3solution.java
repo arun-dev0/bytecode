@@ -42,9 +42,9 @@ public class problem3solution {
         double executionMillis = executionNanos / 1_000_000;
         System.out.println("Execution Time: " + executionMillis); // finds execution time 
     }
-    public static void advancedSolution(){
+    public static void advancedSolution(){ // Prime Factorization method
         long start = System.nanoTime();
-        List<Integer> primeNumbers = new ArrayList<>();
+        List<Integer> primeNumbers = new ArrayList<>(); // list for finding all prime nubers from 1-20
          
         boolean[] isPrime = new boolean[20 + 1]; // find prime numbers using the sieve of eratosthenes
         java.util.Arrays.fill(isPrime, true); // assume all are prime initially
@@ -76,16 +76,15 @@ public class problem3solution {
         System.out.println("Execution Time: " + executionMillis); // finds execution time 
     }
 
+
     // ----------------- HELPER FUNCTIONS -----------------
 
 
     public static long lcm(long a, int b){ // finds LCM based on the fact that the LCM of a and b is always a*b divided by the GCD of a and b 
-
         long lcm = (a*b)/gcd(a, b);
         return lcm;
-
     }
-    public static int gcd(long a, int b) { // finds GCD of two numbers
+    public static int gcd(long a, int b) { // finds GCD of two numbers using Euclid's Algorithm
         
         while (b != 0) {
             int temp = b;
@@ -98,3 +97,4 @@ public class problem3solution {
 // Solution : 232792560
 // Solution 1 Execution Time : 107 milliseconds
 // Solution 2 Execution Time : 0.01 milliseconds (WAY faster)
+// Solution 3 Execution Time : 0.05 milliseconds (slightly slower)
