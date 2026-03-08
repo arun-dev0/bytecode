@@ -1,9 +1,13 @@
 package problem3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class problem3solution {
     public static void main(String[] args) {
         beginnerSolution();
         intermediateSolution();
+        advancedSolution();
     }
     public static void beginnerSolution(){ // "Smart Brute Force" way
         long start = System.nanoTime();
@@ -33,6 +37,39 @@ public class problem3solution {
             num ++; // to go through all numbers from 2-20
         }
         System.out.println(lcm); // prints final value
+        long stop = System.nanoTime();
+        double executionNanos = stop - start;
+        double executionMillis = executionNanos / 1_000_000;
+        System.out.println("Execution Time: " + executionMillis); // finds execution time 
+    }
+    public static void advancedSolution(){
+        long start = System.nanoTime();
+        List<Integer> primeNumbers = new ArrayList<>();
+         
+        boolean[] isPrime = new boolean[20 + 1]; // find prime numbers using the sieve of eratosthenes
+        java.util.Arrays.fill(isPrime, true); // assume all are prime initially
+        isPrime[0] = isPrime[1] = false; // 0 and 1 are not prime
+
+        for (int p = 2; p * p <= 20; p++) { // loop to find all non-prime values
+            if (isPrime[p]) {
+                for (int i = p * p; i <= 20; i += p) // mark all multiples of p starting from p*p
+                    isPrime[i] = false;
+            }
+        }
+        for (int i = 2; i <= 20; i++) { // loop to store only prime values
+            if (isPrime[i]){ 
+                primeNumbers.add(i); // store all prime numbers
+            }
+        }
+        long finalValue = 1;
+        for (int primeNumber : primeNumbers) {
+            int exponent = 1;
+            while (Math.pow(primeNumber, exponent) <= 20){
+                exponent++;
+            } 
+            finalValue *= Math.pow(primeNumber, exponent-1);
+        }
+        System.out.println(finalValue);
         long stop = System.nanoTime();
         double executionNanos = stop - start;
         double executionMillis = executionNanos / 1_000_000;

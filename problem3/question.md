@@ -247,7 +247,7 @@ Let's see how different approaches perform:
 After you solve it, try these:
 
 1. **What's the answer for numbers 1 to 30?**
-5.493670133567616E19
+2329089562800
 
 2. **How many digits does the answer for 1-20 have?**
 9
@@ -258,7 +258,7 @@ I can
 4. **What patterns do you notice in the answers?**
    - 1-5 = 60
    - 1-10 = 2520
-   - 1-20 = ???
+   - 1-20 = 232792560
 
 5. **Efficiency Challenge:** Make your program solve for 1-100 instantly!
 It does, but it gets the wrong answer
