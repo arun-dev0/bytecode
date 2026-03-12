@@ -26,12 +26,12 @@ The average score is: (88 + 72 + 95 + 60 + 81) ÷ 5 = **79** *(rounded down)*
 ### How do two lists work together?
 When two lists are linked by position, they're called **parallel lists**. The item at index `i` in one list corresponds to the item at index `i` in the other.
 
-```python
-names  = ["Alice", "Bob", "Charlie"]
-scores = [88,      72,    95       ]
-#          ^                ^
-#     names[0] = "Alice"    scores[0] = 88  → Alice scored 88
-#     names[1] = "Bob"      scores[1] = 72  → Bob scored 72
+```java
+List<String> names  = new ArrayList(List.of("Alice", "Bob", "Charlie"));
+List<Integer> scores = new ArrayList(List.of(88,      72,    95       ));
+//                                             ^                ^
+//                                        names[0] = "Alice"    scores[0] = 88  → Alice scored 88
+//                                        names[1] = "Bob"      scores[1] = 72  → Bob scored 72
 ```
 
 So to find who got a particular score, you use the **same index** to look up the name!
@@ -72,10 +72,9 @@ Before you start coding, think about HOW you'll solve this problem. An algorithm
 
 ### Write Your Algorithm Here:
 ```
-Step 1: 
-Step 2: 
-Step 3: 
-(Add more steps as needed!)
+Step 1: Find top student in a loop
+Step 2: Find average score
+Step 3: Find all scores below average
 ```
 
 ### Example Algorithm (for the names and scores above):
@@ -148,10 +147,14 @@ PRINT below_average
 
 After you solve the problem, think about:
 
-1. **What happens if two students tie for the top score?** Which name does your program print, and why?
-2. **What if the lists are different lengths?** How would your program behave, and how could you protect against it?
+1. **What happens if two students tie for the top score?** Which name does your program print, and why? 
+It prints the first one because it goes to the first one first, and the second one is not greater than it, so it will not change
+2. **What if the lists are different lengths?** How would your program behave, and how could you protect against it? 
+It would throw an error because the index in one of the lists will not exist in. the other list. This can be avoided by checking the length of each list
 3. **What if ALL students score the same?** Would your below_average list be empty?
+Yes, because no one is below average, they are all average.
 4. **Could you combine the names and scores into a single list of pairs?** How might that change your code?
+Possibly. This would cut a few lines and will be helpful to speed up code
 
 ---
 
