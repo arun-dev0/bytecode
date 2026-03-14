@@ -14,26 +14,24 @@ Notice the pattern:
 public class Euler2 {
     
     public static void main(String[] args) {
+    long start = System.nanoTime();
     int num1 = 1;
     int num2 = 1;
     int tsum = 0;
     int sum = 0;
-    int term = 1;
 
         while(num2 <= 4000000) {
             if (num2%2==0){
             tsum += num2;
             }
-            System.out.println("num1:" + num1);
-            System.out.println("num2:" + num2);
-            System.out.println("tsum:" + tsum);
-            System.out.println("term:"+term);
-            System.out.println("===================");
             sum = num2+num1;
             num1=num2;
             num2=sum;
-            term++;
         }
-
+        System.out.println("tsum:" + tsum);
+        long stop = System.nanoTime();
+        long durationNano = stop - start;
+        double durationMilli = (double) durationNano / 1_000_000.0;
+        System.out.println("Execution time: " + durationMilli);
     }
 }
