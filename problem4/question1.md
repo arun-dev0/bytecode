@@ -30,8 +30,8 @@ When two lists are linked by position, they're called **parallel lists**. The it
 List<String> names  = new ArrayList(List.of("Alice", "Bob", "Charlie"));
 List<Integer> scores = new ArrayList(List.of(88,      72,    95       ));
 //                                             ^                ^
-//                                        names[0] = "Alice"    scores[0] = 88  → Alice scored 88
-//                                        names[1] = "Bob"      scores[1] = 72  → Bob scored 72
+//                                        names.get(0) = "Alice"    scores.get(0) = 88  → Alice scored 88
+//                                        names.get(1) = "Bob"      scores.get(1) = 72  → Bob scored 72
 ```
 
 So to find who got a particular score, you use the **same index** to look up the name!

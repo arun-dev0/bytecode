@@ -145,8 +145,11 @@ PRINT players[best_index]
 After you solve the problem, think about:
 
 1. **What if two players tie for the highest total?** Which name does your program print, and why?
+It will print the first one on the list of names, because the second one is not greater than the first one
 2. **What if a player has no scores** — an empty inner list like `[]`? What happens?
+They will be ignored, becaus ethey do not have any scores
 3. **What would change** if players had 5 rounds instead of 3?
+Nothing, because my program is built to handle any amout of rounds without any change in the program
 
 ---
 
