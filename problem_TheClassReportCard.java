@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class problem_four {
+public class problem_TheClassReportCard {
     public static void main(String[] args) {
 
         int[] scores = {88, 72, 95, 60, 81}; // those are the scores of the students

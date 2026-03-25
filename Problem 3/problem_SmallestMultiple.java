@@ -1,4 +1,4 @@
-public class problem_three {
+public class problem_SmallestMultiple {
     public static void main(String[] args) {
         long result = 1;// 1 because anything is divisble by 1
 
