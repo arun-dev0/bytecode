@@ -132,13 +132,13 @@ Popcount (number of 1s): 8
 ### Write Your Algorithm Here:
 
 ```
-Step 1: 
+Step 1: Take a number
 
-Step 2: 
+Step 2: Find binary
 
-Step 3: 
+Step 3: Add 1 to popcount for every 1 in the number 
 
-Step 4:
+Step 4: Print binary and popcount
 
 (Add more steps as needed!)
 ```
@@ -239,13 +239,13 @@ Use these cases to check that your program is correct:
 
 | Input (Decimal) | Expected Binary | Expected Popcount | Your Result |
 | --------------- | --------------- | ----------------- | ----------- |
-| 1               | 1               | 1                 | ?           |
-| 5               | 101             | 2                 | ?           |
-| 13              | 1101            | 3                 | ?           |
-| 42              | 101010          | 3                 | ?           |
-| 100             | 1100100         | 3                 | ?           |
-| 127             | 1111111         | 7                 | ?           |
-| 255             | 11111111        | 8                 | ?           |
+| 1               | 1               | 1                 | 1           |
+| 5               | 101             | 2                 | 2           |
+| 13              | 1101            | 3                 | 3           |
+| 42              | 101010          | 3                 | 3           |
+| 100             | 1100100         | 3                 | 4           |
+| 127             | 1111111         | 7                 | 7           |
+| 255             | 11111111        | 8                 | 8           |
 
 > 💡 **Notice anything about 255?** It fills a whole byte with 1s. That's why 255 is such a magic number in computing — colors, IP addresses, and more!
 
@@ -273,10 +273,15 @@ Use these cases to check that your program is correct:
 After you solve it, think about these:
 
 1. **Which numbers from 1–15 have the highest popcount?** Is there a pattern?
+15. It is always a power of 2 minus one
 2. **Powers of 2 (1, 2, 4, 8, 16...) always have a popcount of ___. Why?**
+1, because the entire value fits into one digit
 3. **What is the popcount of a number N plus the popcount of N+1? Does a pattern emerge?**
+
 4. **Can you modify your program to go the other way** — convert a binary string *back* to decimal?
+Yes, but it might take a bit more effort
 5. **Why is 255 the maximum value of a single byte?** What's the minimum? What's the range?
+255 is the maximum because 8 digits are each a power of 2, so the highest is 256. However, 0 also counts, so the highest is 255.
 
 ---
 
@@ -301,9 +306,13 @@ After you solve it, think about these:
 ## Reflection Questions 🤔
 
 1. **Before this problem, did you know computers only use 0 and 1? Does that surprise you?**
+Yes, I did know. At first, it was kind of surprising
 2. **What was the trickiest part of the conversion — and how did you solve it?**
+The trickiest part was getting the program to read the number backwards. I solved it by using
 3. **Could you explain binary numbers to a friend using only a light switch as an analogy?**
+Yes. An off light switch would be considered 0, and on would be 1. There is no in-between, like how a light cannot be half-way on
 4. **Where else in real life do you see "on/off" or "yes/no" systems that are secretly binary?**
+If a device is on or off, or if a robot is moving or not.
 
 ---
 
