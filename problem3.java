@@ -17,10 +17,10 @@ public class problem3 {
     }
 
     public static void main(String[] args) {  
-        long result = 1;                 // Start with 1 because LCM calculations begin from 1
+        long result = 1;                 // start with 1 because LCM calculations begin from 1
 
-        for (int i = 1; i <= 20; i++) {  // Loop through numbers 1 to 20
-            result = lcm(result, i);     // Update result by computing LCM of current result and i
+        for (int i = 1; i <= 20; i++) {  // loop through numbers 1 to 20
+            result = lcm(result, i);     // update result by computing LCM of current result and i
         }
 
         // Print the final answer
