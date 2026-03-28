@@ -13,18 +13,18 @@ public class problem_TournamentBracket {
         int bestTotal = 0; // start at 0 for the highest total
         int bestIndex = 0; // this keeps track of the winner's index
 
-        for (int i = 0; i < players.length; i++) { // go through each player
+        for (int i = 0; i < players.length; i++) { // go through each player and check the score and then add it. i is player index
             int playerTotal = 0; // start each player's total at 0
 
-            for (int j = 0; j < scores[i].length; j++) { // go through each score for that player
+            for (int j = 0; j < scores[i].length; j++) { // go through each score for the players and then adds it to their total 
                 playerTotal = playerTotal + scores[i][j]; // add each score to the player's total
             }
 
             System.out.println(players[i] + " total: " + playerTotal); // print the player's name and total
 
-            if (playerTotal > bestTotal) { // if this total is bigger than the highest so far
-                bestTotal = playerTotal; // update the highest total
-                bestIndex = i; // save the index of that player
+            if (playerTotal > bestTotal) { // if this total is bigger than the highest total so far
+                bestTotal = playerTotal; // make it the highest total
+                bestIndex = i; // the best index will become the player's index
             }
         }
 
