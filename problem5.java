@@ -1,4 +1,4 @@
-// Language: Java
+
 import java.util.Scanner;
 
 public class problem5 {
