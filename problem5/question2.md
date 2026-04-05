@@ -86,7 +86,7 @@ A string (like `"1101"`) is a palindrome if it equals its **reverse**:
 1. **How will you convert a number to binary?**
    - Hint: try dividing by 2 repeatedly, or look for a built-in function!
 
-2. **How will you check if a string is a palindrome?**
+2. **How will you check if a string is a pa654lindrome?**
    - Hint: Can you compare a string with its reverse?
 
 3. **How will you loop through all numbers 1 to 100?**
