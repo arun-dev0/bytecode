@@ -13,6 +13,14 @@ public class Problem_5 {
             }
 
             System.out.println(i + " = " + binary_representation);
+
+            String reversed = new StringBuilder(binary_representation)
+                    .reverse()
+                    .toString();
+
+            if (binary_representation.equals(reversed)) {
+                System.out.println(i + " = " + binary_representation + " (same forward/backward)");
+            }
         }
     }
 }

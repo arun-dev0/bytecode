@@ -24,9 +24,7 @@ Explain your algorithm (see section below) */
             if (scores[i] > highscore) {
                 highscore = scores[i];
             }
-                             System.out.println(names[i] + " had a highest score of " + highscore);
-
-          
+            System.out.println(names[i] + " had a highest score of " + highscore);
            
             int total = 0;
             for (i = 0; i < scores.length; i++) {
