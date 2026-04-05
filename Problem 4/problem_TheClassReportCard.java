@@ -13,15 +13,15 @@ public class problem_TheClassReportCard {
 
         int average = total / scores.length; // the formula to find average
 
-        int topIndex = 0; // the top index
+        int topIndex = 0; // the top index tells where the highest score is
         for (int i = 1; i < scores.length; i++) { // check every score
-            if (scores[i] > scores[topIndex]) { // if the score is the highest, make it the top index
-                topIndex = i; // i is the top index
+            if (scores[i] > scores[topIndex]) { // if the score is higher then the current topindex
+                topIndex = i; // make i the new top index
             }
         }
 
-        ArrayList<String> belowAverage = new ArrayList<String>(); // make an empty list for below-average students
-
+        ArrayList<String> belowAverage = new ArrayList<String>(); // make a list for below-average students
+                // a repeat for the below average students
         for (int i = 0; i < scores.length; i++) { // check every score
             if (scores[i] < average) { // if the score is less than the average
                 belowAverage.add(names[i]); // if it is below average, add the names to the below-average list
