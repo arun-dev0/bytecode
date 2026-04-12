@@ -30,3 +30,7 @@ public class solution4 {
         System.out.println("Average score: " + average); // print average
     }
 }
+
+
+
+
