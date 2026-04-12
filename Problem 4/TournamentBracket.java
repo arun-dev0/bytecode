@@ -86,11 +86,11 @@ public class TournamentBracket {
                 sum += score;
             }
 
-            double avg = (double) sum / s;
-
+            double avg = (double) sum / s;     
             if (avg < classAverage) {
                 belowAverage.add(names[i]);
             }
+
         }
 
         System.out.println("Students below average: " + String.join(", ", belowAverage));
