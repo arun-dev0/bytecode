@@ -5,19 +5,19 @@ import java.util.Scanner;
 
 public class problem6question2solution{ 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a word: ");
-        String wordA = scanner.next();
-        System.out.print("Enter another word: ");
-        String wordB = scanner.next();
-        isAnagram(wordA, wordB);
-        scanner.close();
+        Scanner scanner = new Scanner(System.in); // initializes scanner to take in words
+        System.out.print("Enter a word: "); // asks user for a word
+        String wordA = scanner.next(); // stores that word
+        System.out.print("Enter another word: "); // asks for another word
+        String wordB = scanner.next(); // stores the second word
+        isAnagram(wordA, wordB); // sees if the words are anagrams
+        scanner.close(); // closes the scanner
     }
-    public static void isAnagram(String a, String b){
-        char[] firstWord = a.toLowerCase().toCharArray();
-        char[] secondWord = b.toLowerCase().toCharArray();
-        Arrays.sort(firstWord);
-        Arrays.sort(secondWord);        
-        System.out.println(Arrays.equals(firstWord, secondWord) ? "The words are anagrams" : "The words are not anagrams");
+    public static void isAnagram(String a, String b){ // method to determine if two words are anagrams or not
+        char[] firstWord = a.toLowerCase().toCharArray(); // turns the first word into an array and ignores case
+        char[] secondWord = b.toLowerCase().toCharArray(); // turns the second word into an array and ignores case
+        Arrays.sort(firstWord); // sorts the first word
+        Arrays.sort(secondWord); // sorts the second word 
+        System.out.println(Arrays.equals(firstWord, secondWord) ? "The words are anagrams" : "The words are not anagrams"); // decides if the words are anagrams or not
     }
 }   
