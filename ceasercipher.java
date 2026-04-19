@@ -27,7 +27,7 @@ public class ceasercipher {
             //Step 2
             int newShift = shifted + shiftNumber;
             //Step 3 
-            int step3 = newShift % 26;
+            int step3 = (newShift % 26 + 26) % 26;
             //step 4
             char newCharacter = (char)(base + step3);
             result = result + newCharacter;
@@ -49,7 +49,7 @@ public class ceasercipher {
             //step 2
             int newShift = shifted - shiftNumber;
             //step 3
-            int step3 = newShift % 26;
+            int step3 = (newShift % 26 + 26) % 26;
             //step 4
             char newCharacter = (char)(base+step3);
             result = result + newCharacter;
