@@ -7,24 +7,17 @@ public class AnagramCheck {
         System.out.println("Please input word 1: ");
         String wordA = scanner.next();
         System.out.println("Please input word 2: ");
-        String wordA = scanner.next();
+        String wordB = scanner.next();
         String word1 = sortedWord(wordA);
         String word2 = sortedWord(wordB);
-        System.out.println(word1);
-        System.out.println(word2);
-
-
-    scanner.close();
+        System.out.println(word1.equals(word2) ? "Anagram!" : "Not an anagram.");
+        scanner.close();
     }
-}
 
-public static String[] sortedWord(String word){
-    String lower = word.toLowerCase();         // "hello world"
-     // Remove spaces
-    String noSpaces = lower.replace(" ", "");   // "HelloWorld"
-    // Convert to array of characters
-    char[] letters = word.toCharArray();
-    Arrays.sort(letters);
-    letters = new String(letters);
-    return letters[];
+    public static String sortedWord(String word) {
+        String noSpaces = word.toLowerCase().replace(" ", "");
+        char[] letters = noSpaces.toCharArray();
+        Arrays.sort(letters);
+        return new String(letters);
+    }
 }

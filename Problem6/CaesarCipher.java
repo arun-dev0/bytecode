@@ -1,4 +1,3 @@
-package Problem6;
 import java.util.Scanner;
 
 public class CaesarCipher {
